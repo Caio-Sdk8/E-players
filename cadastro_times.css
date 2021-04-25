@@ -11,6 +11,12 @@
     display: flex;
 }
 
+.btn_menu i {
+    display: none;
+    color: white;
+    font-size: 30px;
+}
+
 .header {
     background-color: black;
     display: flex;
@@ -87,8 +93,6 @@ body {
     width: 575px;
     background: #ABABAB;
 }
-
-.filé {}
 
 .btn_cadastro {
     background: #001F70;
@@ -227,4 +231,127 @@ td {
 .links_footer img {
     display: flex;
     justify-content: center;
+}
+
+@media (max-width:420px) {
+    .btn_menu i {
+        display: inline-block;
+    }
+    .container_header {
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .box_links_header {
+        display: none;
+        position: absolute;
+        height: 300px;
+        justify-content: space-evenly;
+        width: 100%;
+        align-items: unset;
+        left: 0;
+        top: 60px;
+        flex-direction: column;
+        background-color: black;
+        padding-left: 10vw;
+    }
+    .container {
+        width: 80vw
+    }
+    .header {
+        width: 100%;
+    }
+    .logo_eplay {
+        width: 270px;
+    }
+    .container_inscrição {
+        width: 80vw;
+    }
+    .iprut {
+        width: 70vw;
+    }
+    table {
+        width: 80vw;
+    }
+    .footer {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .links_footer {
+        display: flex;
+        flex-direction: column;
+        font-size: 12px;
+    }
+    .spanzinho {
+        font-size: 18px;
+    }
+    .resp_footer {
+        display: flex;
+    }
+    .nome_tabela {
+        font-size: 28px;
+    }
+    .titulo {
+        font-size: 15px;
+    }
+}
+
+@media (max-width:780px) {
+    .btn_menu i {
+        display: inline-block;
+    }
+    .container_header {
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .box_links_header {
+        display: none;
+        position: absolute;
+        height: 300px;
+        justify-content: space-evenly;
+        width: 100%;
+        align-items: unset;
+        left: 0;
+        top: 60px;
+        flex-direction: column;
+        background-color: black;
+        padding-left: 10vw;
+    }
+    .container {
+        width: 80vw
+    }
+    .header {
+        width: 100%;
+    }
+    .logo_eplay {
+        width: 290px;
+    }
+    .container_inscrição {
+        width: 80vw;
+    }
+    .iprut {
+        width: 70vw;
+    }
+    table {
+        width: 80vw;
+    }
+    .footer {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .links_footer {
+        display: flex;
+        flex-direction: column;
+    }
+    .nome_tabela {
+        font-size: 36px;
+    }
+    .titulo {
+        font-size: 23px;
+    }
 }

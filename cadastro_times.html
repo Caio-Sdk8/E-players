@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>E-players</title>
+    <script src="https://kit.fontawesome.com/c8490647d8.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="cadastro_times.css">
 
 </head>
@@ -13,14 +14,17 @@
 <body>
     <header class="header">
         <div class="container container_menu">
-            <a href="#"> <img src="C:\Users\caio0\OneDrive\Documentos\E-players_html\assets\logo.svg" alt=""></a>
-            <nav class="box_links_header">
-                <a href="C:\Users\caio0\OneDrive\Documentos\E-players_html\E-players.html" class="links">Início</a>
-                <a href="#" class="links">Horários</a>
-                <a href="#" class="links">Campeonatos</a>
-                <a href="#" class="links">Resultados</a>
-                <a href="file:///C:/Users/caio0/OneDrive/Documentos/E-players_html/E-players.html#noticias" class="links">Noticias</a>
+            <a href="#"> <img class="logo_eplay" src="C:\Users\caio0\OneDrive\Documentos\E-players_html\assets\logo.svg" alt=""></a>
+            <nav id="links" class="box_links_header">
+                <a href="C:\Users\caio0\OneDrive\Documentos\E-players_html\E-players.html" class="links" onclick="botaodomenu ()">Início</a>
+                <a href="#" class="links" onclick="botaodomenu ()">Horários</a>
+                <a href="#" class="links" onclick="botaodomenu ()">Campeonatos</a>
+                <a href="#" class="links" onclick="botaodomenu ()">Resultados</a>
+                <a href="file:///C:/Users/caio0/OneDrive/Documentos/E-players_html/E-players.html#noticias" class="links" onclick="botaodomenu ()">Noticias</a>
             </nav>
+            <a class="btn_menu" href="javascript:void(0)" onclick="botaodomenu()">
+                <i class="fas fa-bars"></i>
+            </a>
         </div>
     </header>
     <main>
@@ -70,7 +74,7 @@
                     <a href="#" class="links_footer">Central de ajuda</a>
                     <a href="#" class="links_footer">Contato</a>
                 </div>
-                <div class="conteudo_footer">
+                <div class="conteudo_footer content2">
                     <span class="spanzinho">Paginas</span>
                     <a href="#" class="links_footer">Inicio</a>
                     <a href="#horarios" class="links_footer">Horários</a>
@@ -78,7 +82,7 @@
                     <a href="#" class="links_footer">Resultados</a>
                     <a href="#noticias" class="links_footer">Noticias</a>
                 </div>
-                <img src="C:\Users\caio0\OneDrive\Documentos\E-players_html\assets\logo.svg" alt="">
+                <img class="log_footer" src="C:\Users\caio0\OneDrive\Documentos\E-players_html\assets\logo.svg" alt="">
                 <div class="direita">
                     <div class="Newsletter">
                         <span>Faça parte do nosso clan, assine nossa newsletter!</span>
@@ -101,6 +105,18 @@
             </div>
         </div>
     </footer>
+    <script>
+        function botaodomenu() {
+            var menu = document.getElementById("links");
+            if (menu.style.display === "flex") {
+                //Esconda o menu
+                menu.style.display = "none"
+            } else {
+                //Mostre o menu
+                menu.style.display = "flex"
+            }
+        }
+    </script>
 </body>
 
 </html>
